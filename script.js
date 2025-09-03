@@ -24,24 +24,26 @@ console.log(LastName);
 
 
 // assignment 3.3 - DOM'en
-let mainSection = document.getElementById('main');
+let mainSection = document.getElementById('mainSection');
+
+
+
 let NewParagraph = document.createElement('p');
 let FavoriteFood = 'Pasta with chicken and greens';
 NewParagraph.innerText = 'My favorite foods are ' + FavoriteFood;
-NewParagraph.classList.add('TextStyle')
+NewParagraph.classList.add('textStyle')
 mainSection.appendChild(NewParagraph);
 
-let SecondSection = document.getElementById('SecondSection');
+
 let SecondParagraph = document.createElement('p');
 let SecondFavoriteFood = ' pizza ';
 SecondParagraph.innerText = 'My favorite foods are ' + SecondFavoriteFood;
-SecondParagraph.classList.add('TextStyle')
-SecondSection.appendChild(SecondParagraph);
+SecondParagraph.classList.add('textStyle')
+mainSection.appendChild(SecondParagraph);
 
-let ThirdSection = document.getElementById('ThirdSection');
+
 let ThirdParagraph = document.createElement('p');
 let ThirdFavoriteFood = ' burgers';
 ThirdParagraph.innerText = 'My favorite foods are ' + ThirdFavoriteFood;
-ThirdParagraph.classList.add('TextStyle')
-ThirdSection.appendChild(ThirdParagraph);
-
+ThirdParagraph.classList.add('textStyle')
+mainSection.appendChild(ThirdParagraph);
