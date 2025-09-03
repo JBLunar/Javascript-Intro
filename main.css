@@ -1,0 +1,19 @@
+body {
+  background-color: rgb(44, 44, 44);
+  color: white;
+  box-sizing: border-box;
+  display: grid;
+  min-height: 100vh;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  align-self: center;
+  justify-self: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana,
+    sans-serif;
+}
