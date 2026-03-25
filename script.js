@@ -8,6 +8,42 @@
 // result = result * 7; // Dette virker ikke fordi 'result' er deklareret med 'const' og kan ikke ændres.
 // console.log(result);
 
+const myData = {
+    name: 'Kristian',
+    age: 20,
+    city: 'Hurup Thy',
+
+}
+
+
+function myDataFunction(myData) {
+    return myData.name + ' is ' + myData.age + ' years old and lives in ' + myData.city + '.';
+}
+const header=document.getElementById('test');
+const myInfo=document.createElement('h2');
+myInfo.innerText = myDataFunction(myData);
+header.appendChild(myInfo);
+
+
+
+// 
+// const myNameElement = document.createElement('h2');
+
+// const myAgeElement = document.createElement("h2")
+
+// const myCityElement = document.createElement("h2")
+
+// myNameElement.innerText = myData.name;
+
+// myAgeElement.innerText = myData.age;
+
+// myCityElement.innerText = myData.city;
+// header.appendChild(myNameElement);
+
+// header.appendChild(myAgeElement);
+
+// header.appendChild(myCityElement);
+
 
 // Assignment 2.5.2 - Strings
 // FirstPart of the assignment
